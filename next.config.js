@@ -6,5 +6,10 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
 module.exports = withPlugins([[withBundleAnalyzer]], {
   future: {
     webpack5: true
+  },
+  i18n: {
+    localeDetection: false,
+    locales: ['en', 'ar'],
+    defaultLocale: 'en'
   }
 })
